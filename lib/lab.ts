@@ -36,15 +36,6 @@ export const LAB_CATEGORIES: LabCategory[] = [
         hue: 168,
       },
       {
-        slug: "omniroute",
-        title: "OmniRoute 多 Agent 编排",
-        year: "2026",
-        tags: ["FastAPI", "LangGraph", "OR"],
-        description:
-          "四个 Agent 协同处理供应链扰乱：需求解构、运筹求解、仿真校验、决策摘要。",
-        hue: 218,
-      },
-      {
         slug: "wechatbot",
         title: "KŪSA 聊天机器人",
         year: "2026",
@@ -52,6 +43,15 @@ export const LAB_CATEGORIES: LabCategory[] = [
         description:
           "微信风格界面的角色聊天应用，支持多后端切换与对话记忆持久化。",
         hue: 142,
+      },
+      {
+        slug: "blender-bridge",
+        title: "Blender AI Bridge",
+        year: "2026",
+        tags: ["MCP", "Python", "Blender"],
+        description:
+          "让 Claude Code 直接控制 Blender 建模、渲染、导出，20+ 个 MCP 工具。",
+        hue: 36,
       },
     ],
   },
@@ -111,6 +111,15 @@ export const LAB_CATEGORIES: LabCategory[] = [
         description:
           "同一个当前状态，不同历史经历是否应得到不同的可供性判断？用合成数据做结构验证。",
         hue: 286,
+      },
+      {
+        slug: "llm-finetune",
+        title: "中文对话模型微调",
+        year: "2026",
+        tags: ["LLaMA-Factory", "LoRA", "Qwen2.5"],
+        description:
+          "把 95,873 条中文对话清洗、去重到 73,382 条，搭好 Qwen2.5-7B LoRA 训练工程；训练阶段因云 GPU 成本暂停。",
+        hue: 262,
       },
     ],
   },

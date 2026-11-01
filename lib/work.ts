@@ -207,60 +207,64 @@ export const CASE_STUDIES: CaseStudy[] = [
     image: "/cases/compound-interest/desktop.png",
   },
   {
-    slug: "blender-ai-bridge",
-    title: "Blender AI Bridge",
-    category: "创意技术 · MCP",
+    slug: "omniroute",
+    title: "OmniRoute",
+    category: "AI · 多 Agent 运筹系统",
     year: "2026",
     client: "自研项目",
-    role: "独立开发",
+    role: "独立开发 · 多 Agent 与运筹",
     overview:
-      "让 Claude Code 直接控制 Blender：一句话建场景、调材质、渲染、导出，中间不需要手动点界面。",
+      "四个 Agent 协同，把一段自然语言的供应链扰乱报告，变成可执行的运筹方案和一份高管能读的决策摘要。",
     problem:
-      "3D 工作流里有大量重复操作：建基础形体、摆灯光、调材质、切渲染引擎、导出格式。想把这些交给 AI，但 Blender 的 Python API 不能直接被外部工具调用，需要一个桥。",
+      "供应链扰动通常以自然语言出现——邮件、IM、临时通报。要把它变成运筹模型，得人工翻译成变量、约束和目标；求解结果还要校验物理冲突，最后再翻译成业务语言。这条链路每一步都靠人，慢，而且容易断。",
     process: [
       {
-        title: "三层架构拆开",
-        body: "Claude Code ↔ MCP Server（JSON） ↔ Bridge Server（TCP） ↔ Blender bpy。每层职责单一，出问题能定位到具体一层。",
+        title: "拆成四个 Agent",
+        body: "Router 负责理解与结构化，Solver 负责建模求解，Simulation 负责数字孪生校验，Executive 负责商业摘要。每个 Agent 只做一件事，接口固定。",
       },
       {
-        title: "先做最小可用工具集",
-        body: "场景查询、对象创建、材质、变换、渲染、导出六大类，共 20+ 个 MCP 工具。先保证每个工具单独可用，再组合成工作流。",
+        title: "把自然语言变成边界条件",
+        body: "Router 用链式推理把扰乱报告拆成货物、车辆、时间窗与约束，输出统一的结构化边界条件，交给下游。",
       },
       {
-        title: "真实场景验收",
-        body: "用「创建城市随机场景 + 三点布光 + 渲染 PNG + 导出 FBX」做端到端测试，而不是只测单个函数。",
+        title: "自动建模与求解",
+        body: "Solver 用 PuLP 生成线性/混合整数模型，调用 CBC 求解，覆盖 VRP 等场景；求解器通过适配层隔离，可替换。",
+      },
+      {
+        title: "仿真校验与商业摘要",
+        body: "Simulation 在数字孪生里回放方案、检测冲突并触发自反思；Executive 把结果转成 P&L 对比和高管可读的摘要。",
       },
     ],
     designDecisions: [
       {
-        title: "TCP 而不是 HTTP",
-        body: "Blender 插件跑在本地，TCP 长连接比 HTTP 请求少一层开销，也更容易做「执行中」状态反馈。",
+        title: "Agent 之间用统一消息总线",
+        body: "不让 Agent 互相直接调用。每个 Agent 继承统一基类、通过消息总线通信，链路可观测、可替换、可单独测试。",
       },
       {
-        title: "MCP 作为唯一入口",
-        body: "不另做一套私有协议。接入 MCP 后，任何支持 MCP 的 AI 客户端都能用，不绑定某一个工具。",
+        title: "求解器适配层",
+        body: "建模与求解隔离开，CBC 换成 SCIP 或别的求解器时，业务层不用改。运筹系统里，最容易被焊死的就是求解器。",
       },
       {
-        title: "保留逃生口",
-        body: "提供 execute_blender_code：高级用户可以执行任意 bpy 代码。工具集覆盖常用操作，逃生口覆盖长尾需求。",
+        title: "用测试锁住整条决策链",
+        body: "105 个测试覆盖单元、集成与 E2E：从 Router 输出被 Solver 消费，到 Solver 结果被 Simulation 校验，再到完整链路编排。",
       },
     ],
     outcome:
-      "Bridge 与 MCP Server 打通，20+ 工具可在 Claude Code 中直接调用；城市场景、材质、灯光、渲染、FBX/glTF 导出均已实测通过，并接入项目根目录的 MCP 配置。",
+      "四个 Agent、FastAPI 接口与 Next.js 前端控制台全部可运行；105 个自动化测试在本地全部通过（单元 / 集成 / E2E）。前端为演示界面，图表数据为本地模拟；后端编排、求解与校验逻辑有测试覆盖。",
     metrics: [
-      { value: "20+", label: "MCP 工具" },
-      { value: "3", label: "架构层" },
-      { value: "6", label: "工具分类" },
-      { value: "2", label: "实测渲染" },
+      { value: "105", label: "自动化测试" },
+      { value: "4", label: "Agent" },
+      { value: "9,950", label: "行 Python" },
+      { value: "11", label: "测试文件" },
     ],
     lessons: [
-      "把专业软件接进 AI，关键是桥的稳定性，不是提示词写得多花。",
-      "先做单工具验收，再做端到端；否则出问题不知道是哪一层。",
-      "给高级用户留一个逃生口，比试图覆盖所有操作更实际。",
+      "多 Agent 的难点不是让它们说话，而是定义清楚每一步的输入输出契约。",
+      "运筹模型必须可替换，不能把求解器焊死在业务逻辑里。",
+      "测试要覆盖链路，不只是单点；链路断了，单点全绿也没用。",
     ],
-    tags: ["Python", "MCP", "Blender", "bpy"],
-    hue: 36,
-    image: "/cases/blender-bridge/mcp-demo-render.png",
+    tags: ["Python", "FastAPI", "PuLP", "Multi-Agent"],
+    hue: 218,
+    image: "/cases/omniroute/dashboard.png",
   },
 ];
 
