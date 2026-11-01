@@ -61,7 +61,7 @@ DESIGN.md            # 视觉 SSOT
 ## 上线前必须替换
 
 - [x] `lib/data.ts` 的 `SITE.url` → `https://adrianw.online`
-- [ ] `lib/data.ts` 的 `SITE.email`（当前为 RFC 保留示例邮箱）
+- [x] `lib/data.ts` 的 `SITE.email` → `wxz094365@outlook.com`
 - [ ] `public/cases/` 中截图如涉及隐私信息，先脱敏
 - [ ] 微信二维码（如需要）：放 `public/` 并在联系页引用
 

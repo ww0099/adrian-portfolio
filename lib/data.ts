@@ -8,8 +8,7 @@ export const SITE = {
   description:
     "一个人 + AI，把想法做成能上线的产品。网站、小程序、内部工具、AI Agent 定制开发。",
   url: "https://adrianw.online",
-  // TODO 上线前替换为真实邮箱（当前为 RFC 保留域名，不会误发）
-  email: "adrian@example.com",
+  email: "wxz094365@outlook.com",
   person: {
     name: "Adrian",
     jobTitle: "独立开发者",
