@@ -1,0 +1,149 @@
+{
+  "Nav": {
+    "work": "作品",
+    "lab": "实验室",
+    "services": "服务",
+    "about": "关于",
+    "contact": "联系"
+  },
+  "Skip": {
+    "toContent": "跳到主要内容"
+  },
+  "Footer": {
+    "navLabel": "页脚",
+    "crafted": "由 Adrian 独立设计与开发。"
+  },
+  "Navbar": {
+    "primaryNav": "主导航"
+  },
+  "Home": {
+    "heroLabel": "独立开发者 · 全栈 · AI",
+    "heroAvailability": "可接 1–2 个项目 / 2026 Q4",
+    "heroLine1": "把想法，",
+    "heroLine2a": "做成",
+    "heroLine2b": "能上线",
+    "heroLine3": "的产品。",
+    "heroSubline": "网站、小程序、内部工具、AI Agent —— 一个人，加上 AI，从原型到上线。",
+    "heroScroll": "向下滚动",
+    "statementEyebrow": "关于",
+    "statementLead": "我是 Adrian，独立开发者。过去一年我独立完成了四个项目：",
+    "statementTail": "一个 AI 编程 Agent、一套三端兼职平台、一个已上线的工具站，还有一个让 AI 控制 Blender 的桥。不是概念稿——能跑、能点、能交付。",
+    "capEyebrow": "能力",
+    "capHeading": "我能帮你做什么",
+    "capIntro": "按交付物算，不按技术名词算。",
+    "processEyebrow": "流程",
+    "processHeading": "从聊需求到上线，只有四步",
+    "processIntro": "AI 加速开发，但进度透明：每周给你可点的版本，随时反馈、随时调整。",
+    "contactEyebrow": "联系",
+    "contactLine1": "有想法？",
+    "contactLine2": "聊聊。",
+    "contactEmailLabel": "邮箱",
+    "contactGithubLabel": "GitHub",
+    "contactAvailabilityLabel": "当前档期",
+    "faqEyebrow": "常见问题",
+    "faqHeading": "联系之前，你可能想知道的事"
+  },
+  "Work": {
+    "sectionEyebrow": "精选作品",
+    "sectionTitle": "四个项目，四条完整链路。",
+    "viewAll": "全部作品 →",
+    "indexEyebrow": "作品 / 2026",
+    "indexTitle": "四个真实项目",
+    "indexIntro": "每一个都能点开看细节：做了什么、踩过什么坑、结果是什么。全部由我独立完成。",
+    "client": "类型",
+    "role": "我的角色",
+    "year": "年份",
+    "stack": "技术",
+    "problem": "要解决的问题",
+    "process": "我做了什么",
+    "designDecisions": "关键决策",
+    "finalOutcome": "结果",
+    "lessons": "踩过的坑",
+    "nextProject": "下一个项目"
+  },
+  "Services": {
+    "eyebrow": "服务",
+    "title": "五类交付",
+    "intro": "按交付物报价，不按工时。聊完需求给范围和固定价格。",
+    "deliverables": "你会拿到",
+    "timeline": "周期",
+    "process": "怎么推进",
+    "bookCall": "先聊聊"
+  },
+  "Lab": {
+    "eyebrow": "实验室",
+    "title": "主案例之外的实验",
+    "intro": "自己会用的工具、做过的产品，以及研究方向的落地原型。",
+    "homeEyebrow": "实验室",
+    "homeTitle": "还有这些",
+    "homeAll": "全部实验 →"
+  },
+  "About": {
+    "eyebrow": "关于",
+    "title": "一个人，加上 AI",
+    "intro": "我是 Adrian，独立开发者。用更快的速度、更低的成本，把想法做成能用的产品。",
+    "p1": "我是计算机专业在读的学生，也是一名独立开发者。过去一年，我把大部分时间花在把想法做成能运行的东西上——不是课程作业，也不是概念稿。",
+    "p2": "我的工作方式是：先确认问题，再用 AI 加速实现，最后用测试和真实使用把它磨到能用。速度快，但不跳过验证。",
+    "p3": "目前主要接网站、小程序、内部工具和 AI Agent 定制。如果你有一个想法但不确定值不值得做，也可以先聊聊。",
+    "factRoleLabel": "身份",
+    "factRole": "独立开发者 / 计算机专业在读",
+    "factLocationLabel": "所在地",
+    "factLocation": "中国 · 远程协作",
+    "factFocusLabel": "方向",
+    "factFocus": "Web / 小程序 / AI Agent",
+    "factAvailabilityLabel": "档期",
+    "factAvailability": "可接 1–2 个项目"
+  },
+  "Contact": {
+    "eyebrow": "联系",
+    "title": "说说你的项目",
+    "intro": "填一下表单，或直接发邮件。我会在 1–2 个工作日内回复。",
+    "emailLabel": "邮箱",
+    "socialLabel": "更多",
+    "availabilityLabel": "当前档期",
+    "availability": "可接 1–2 个项目 / 2026 Q4",
+    "sideNote": "如果是小程序或 AI 工具类需求，可以在留言里直接说明业务场景和期望上线时间，我会给更具体的建议。"
+  },
+  "Form": {
+    "name": "怎么称呼你",
+    "email": "邮箱",
+    "projectType": "项目类型",
+    "message": "想做什么",
+    "selectType": "请选择项目类型",
+    "projectTypes": {
+      "website": "官网 / 落地页",
+      "miniapp": "微信小程序",
+      "agent": "AI Agent / 自动化",
+      "tools": "内部工具 / 数据看板",
+      "unsure": "还不确定"
+    },
+    "errors": {
+      "name": "请填写你的称呼。",
+      "emailEmpty": "请填写你的邮箱。",
+      "emailInvalid": "请输入有效的邮箱地址。",
+      "projectType": "请选择一个项目类型。",
+      "message": "请简单介绍一下你的需求。"
+    },
+    "placeholder": {
+      "name": "你的名字或称呼",
+      "email": "你的邮箱地址",
+      "message": "想做什么、给谁用、希望什么时候上线……"
+    },
+    "submit": "发送 →",
+    "mailtoHint": "点击后会打开你的邮件客户端，内容是预填好的。"
+  },
+  "Metadata": {
+    "homeTitle": "Adrian — 独立开发者｜网站、小程序、AI Agent 定制",
+    "homeDescription": "一个人 + AI，把想法做成能上线的产品。提供网站、小程序、内部工具与 AI Agent 定制开发，从原型到上线全程负责。",
+    "aboutTitle": "关于",
+    "aboutDescription": "我是 Adrian，一名独立开发者。提供网站、小程序、内部工具与 AI Agent 定制开发。",
+    "contactTitle": "联系",
+    "contactDescription": "说说你的项目，我会在 1–2 个工作日内回复。",
+    "servicesTitle": "服务",
+    "servicesDescription": "官网与落地页、微信小程序、AI Agent 与自动化、内部工具与数据看板、工具站与 SEO 站。",
+    "labTitle": "实验室",
+    "labDescription": "主案例之外的实验：桌面工具、全栈产品与研究原型。",
+    "workTitle": "作品",
+    "workDescription": "四个真实项目：AI 编程 Agent、学生兼职小程序、已上线工具站、Blender AI 桥。"
+  }
+}
