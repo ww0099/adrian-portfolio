@@ -106,7 +106,7 @@ export default async function ServicesPage({
         ))}
       </div>
 
-      <ContactCta />
+      <ContactCta variant="services" />
     </>
   );
 }

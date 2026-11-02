@@ -53,7 +53,7 @@ export default async function HomePage({
       <Process />
       <LabStrip />
       <FAQ />
-      <ContactCta />
+      <ContactCta variant="home" />
     </>
   );
 }

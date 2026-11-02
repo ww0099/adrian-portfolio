@@ -41,7 +41,7 @@ export default async function WorkPage({
     <>
       <PageHeader eyebrow={t("indexEyebrow")} title={t("indexTitle")} intro={t("indexIntro")} />
       <SelectedWork all />
-      <ContactCta />
+      <ContactCta variant="work" />
       <JsonLd
         data={{
           "@context": "https://schema.org",

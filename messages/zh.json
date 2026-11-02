@@ -18,7 +18,7 @@
   },
   "Home": {
     "heroLabel": "独立开发者 · 全栈 · AI",
-    "heroAvailability": "可接 1–2 个项目 / 2026 Q4",
+    "heroAvailability": "项目制合作 · 欢迎来聊",
     "heroLine1": "把想法，",
     "heroLine2a": "做成",
     "heroLine2b": "能上线",
@@ -34,14 +34,44 @@
     "processEyebrow": "流程",
     "processHeading": "从聊需求到上线，只有四步",
     "processIntro": "AI 加速开发，但进度透明：每周给你可点的版本，随时反馈、随时调整。",
-    "contactEyebrow": "联系",
-    "contactLine1": "有想法？",
-    "contactLine2": "聊聊。",
-    "contactEmailLabel": "邮箱",
-    "contactGithubLabel": "GitHub",
-    "contactAvailabilityLabel": "当前档期",
     "faqEyebrow": "常见问题",
     "faqHeading": "联系之前，你可能想知道的事"
+  },
+  "Cta": {
+    "emailLabel": "邮箱",
+    "githubLabel": "GitHub",
+    "availabilityLabel": "当前档期",
+    "availability": "项目制合作，欢迎随时来聊",
+    "home": {
+      "eyebrow": "联系",
+      "line1": "想法不落地，",
+      "line2": "就永远只是想法。"
+    },
+    "work": {
+      "eyebrow": "下一步",
+      "line1": "下一个项目，",
+      "line2": "可以是你的。"
+    },
+    "project": {
+      "eyebrow": "开始",
+      "line1": "你的项目，",
+      "line2": "也能这样推进。"
+    },
+    "lab": {
+      "eyebrow": "合作",
+      "line1": "实验到产品，",
+      "line2": "只差一次对话。"
+    },
+    "services": {
+      "eyebrow": "开始",
+      "line1": "方向定了，",
+      "line2": "剩下的交给我。"
+    },
+    "about": {
+      "eyebrow": "联系",
+      "line1": "了解我之后，",
+      "line2": "该聊聊你了。"
+    }
   },
   "Work": {
     "sectionEyebrow": "精选作品",
@@ -92,7 +122,7 @@
     "factFocusLabel": "方向",
     "factFocus": "Web / 小程序 / AI Agent",
     "factAvailabilityLabel": "档期",
-    "factAvailability": "可接 1–2 个项目"
+    "factAvailability": "项目制合作，欢迎来聊"
   },
   "Contact": {
     "eyebrow": "联系",
@@ -101,7 +131,7 @@
     "emailLabel": "邮箱",
     "socialLabel": "更多",
     "availabilityLabel": "当前档期",
-    "availability": "可接 1–2 个项目 / 2026 Q4",
+    "availability": "项目制合作，欢迎随时来聊",
     "sideNote": "如果是小程序或 AI 工具类需求，可以在留言里直接说明业务场景和期望上线时间，我会给更具体的建议。"
   },
   "Form": {

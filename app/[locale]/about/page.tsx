@@ -45,7 +45,7 @@ export default async function AboutPage({
       <Capabilities />
       <Process />
       <FAQ />
-      <ContactCta />
+      <ContactCta variant="about" />
 
       <JsonLd
         data={{

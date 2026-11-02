@@ -86,7 +86,7 @@ export default async function LabPage({
         ))}
       </div>
 
-      <ContactCta />
+      <ContactCta variant="lab" />
 
       <JsonLd
         data={{

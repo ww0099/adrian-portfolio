@@ -234,7 +234,7 @@ export default async function CaseStudyPage({
         </div>
       </section>
 
-      <ContactCta />
+      <ContactCta variant="project" />
     </>
   );
 }
