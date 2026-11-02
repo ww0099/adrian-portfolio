@@ -11,6 +11,7 @@ import ScrollProgress from "@/components/anim/ScrollProgress";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { SITE } from "@/lib/data";
+import { Analytics } from "@vercel/analytics/next";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -105,6 +106,7 @@ export default async function LocaleLayout({
             <Footer />
           </SmoothScroll>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
