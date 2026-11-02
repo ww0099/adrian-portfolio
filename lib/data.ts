@@ -120,9 +120,23 @@ export const FAQS = [
   },
 ];
 
+/** 已上线站点 — 首页成果区渲染为可点击链接行 */
+export const LIVE_SITES = [
+  {
+    name: "个人作品集",
+    href: "https://adrianw.online",
+    note: "本站 · Next.js / Vercel",
+  },
+  {
+    name: "复利计算器站",
+    href: "https://top.net.im",
+    note: "英文工具站 · 静态导出 / CDN",
+  },
+];
+
 export const STATS = [
   { value: "4", label: "完整交付项目" },
-  { value: "1", label: "已上线站点" },
+  { value: "2", label: "已上线站点" },
   { value: "138", label: "自动化测试" },
   { value: "5", label: "技术方向" },
 ];

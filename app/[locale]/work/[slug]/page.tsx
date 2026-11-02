@@ -176,6 +176,17 @@ export default async function CaseStudyPage({
           <Reveal>
             <h2 className="display-lg mb-8 text-ink">{t("finalOutcome")}</h2>
             <p className="body-lg max-w-3xl">{c.outcome}</p>
+            {c.liveUrl && (
+              <a
+                href={c.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-flex items-center gap-2 rounded-full border border-line-strong px-6 py-3 text-sm text-ink transition-colors hover:border-accent hover:text-accent"
+              >
+                {t("visitSite")}
+                <span aria-hidden="true">↗</span>
+              </a>
+            )}
           </Reveal>
           <div className="mt-14 grid grid-cols-2 gap-8 md:grid-cols-4">
             {c.metrics.map((m, i) => (

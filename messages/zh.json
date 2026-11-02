@@ -27,7 +27,9 @@
     "heroScroll": "向下滚动",
     "statementEyebrow": "关于",
     "statementLead": "我是 Adrian，独立开发者。过去一年我独立完成了四个项目：",
-    "statementTail": "一个 AI 编程 Agent、一套三端兼职平台、一个已上线的工具站，还有一个让 AI 控制 Blender 的桥。不是概念稿——能跑、能点、能交付。",
+    "statementTail": "一个 AI 编程 Agent、一套三端兼职平台、一个多 Agent 运筹系统，还有一个已上线的工具站。其中两个站点在线上运行，点开就能用。不是概念稿——能跑、能点、能交付。",
+    "liveEyebrow": "已上线站点",
+    "liveHint": "点开即可访问",
     "capEyebrow": "能力",
     "capHeading": "我能帮你做什么",
     "capIntro": "按交付物算，不按技术名词算。",
@@ -88,6 +90,7 @@
     "process": "我做了什么",
     "designDecisions": "关键决策",
     "finalOutcome": "结果",
+    "visitSite": "访问站点",
     "lessons": "踩过的坑",
     "nextProject": "下一个项目"
   },

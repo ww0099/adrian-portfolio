@@ -23,6 +23,8 @@ export type CaseStudy = {
   hue: number;
   /** 封面图（public 下路径） */
   image?: string;
+  /** 线上地址 — 存在时在结果区渲染"访问站点"按钮 */
+  liveUrl?: string;
 };
 
 export const CASE_STUDIES: CaseStudy[] = [
@@ -190,7 +192,8 @@ export const CASE_STUDIES: CaseStudy[] = [
       },
     ],
     outcome:
-      "站点已上线 top.net.im，23 个内容路由、4 个计算器、10 篇英文文章，GitHub Actions 自动部署，sitemap 已提交搜索引擎。代码仓库公开。",
+      "站点已上线，23 个内容路由、4 个计算器、10 篇英文文章，GitHub Actions 自动部署，sitemap 已提交搜索引擎。代码仓库公开。",
+    liveUrl: "https://top.net.im",
     metrics: [
       { value: "23", label: "内容路由" },
       { value: "4", label: "计算器" },

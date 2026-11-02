@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import Reveal from "@/components/anim/Reveal";
-import { STATS } from "@/lib/data";
+import { LIVE_SITES, STATS } from "@/lib/data";
 
 /** 首页陈述段：左侧大段叙事，右侧真实数字。 */
 export default function Statement() {
@@ -15,6 +15,35 @@ export default function Statement() {
             {t("statementLead")}
             <span className="text-text-dim">{t("statementTail")}</span>
           </p>
+
+          <div className="mt-14 max-w-4xl border-t border-line">
+            <div className="flex items-baseline justify-between gap-4 py-4">
+              <p className="eyebrow">{t("liveEyebrow")}</p>
+              <p className="text-xs text-text-dim">{t("liveHint")}</p>
+            </div>
+            {LIVE_SITES.map((site) => (
+              <a
+                key={site.href}
+                href={site.href}
+                target="_blank"
+                rel="noreferrer"
+                className="group flex items-center justify-between gap-6 border-t border-line py-5"
+              >
+                <span className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                  <span className="font-display text-xl tracking-[-0.02em] text-ink transition-colors group-hover:text-accent md:text-2xl">
+                    {site.name}
+                  </span>
+                  <span className="text-sm text-text-muted">{site.note}</span>
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="text-xl text-accent transition-transform group-hover:translate-x-1"
+                >
+                  ↗
+                </span>
+              </a>
+            ))}
+          </div>
         </Reveal>
 
         <Reveal delay={0.12}>
