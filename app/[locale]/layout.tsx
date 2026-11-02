@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { Analytics } from "@vercel/analytics/next";
 import "@fontsource-variable/inter";
 import "../globals.css";
 import SmoothScroll from "@/components/providers/SmoothScroll";
@@ -105,6 +106,7 @@ export default async function LocaleLayout({
             <Footer />
           </SmoothScroll>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
